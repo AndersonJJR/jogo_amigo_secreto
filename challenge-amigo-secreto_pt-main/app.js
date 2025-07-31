@@ -1,7 +1,8 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 let listaComNomes = [];
 
-//Nesta função é responsavel por gerar um loop de while(enquanto), que vai acumulando nomes em uma lista a partir da entrada do usuario.
+//Nesta função é responsavel por gerar um loop de while(enquanto), que vai acumulando nomes em uma lista a partir da 
+// entrada do usuario.
 function adicionarAmigo(){
 
     while (true){
@@ -18,7 +19,8 @@ function adicionarAmigo(){
     }
 }
 
-//Nesta função usamos o loop for por ter um número limitados de elementos presentes na lista, geramos um número aleatorio com o comprimento da lista
+//Nesta função usamos o loop for por ter um número limitados de elementos presentes na lista, 
+// geramos um número aleatorio com o comprimento da lista
 //assim pegando um index aleatorio sendo o sorteado.
 function sortearAmigo(){
 
@@ -32,7 +34,8 @@ function sortearAmigo(){
         return mostrarResultado.append(sorteado)
     }
 }
-
+//Nesta função pegamos os elementos da listaComNomes , iteramos sobre ela criando uma nova variavel 'li', assim adicionando esses
+//elementos nessa nova variavel/lista e imprimindo na pagina HTML
 function mostrarAmigosNaTela(tag){
     let textoTela = document.getElementById(tag);
 
@@ -43,7 +46,7 @@ function mostrarAmigosNaTela(tag){
             textoTela.appendChild(li);
         }
 }
-
+//Essa função sempre que é chamada limpa o campo
 function limparCampo(){
     campoDigitado = document.getElementById('amigo');
     campoDigitado.value = '';
